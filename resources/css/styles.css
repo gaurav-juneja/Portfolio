@@ -85,18 +85,16 @@ header {
     transition: all 0.4s ease-out;
 }
 
+/* Hero-Section */
+
 .hero_image {
-    /* border: 2px solid var(--btn); */
-    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1);
     box-shadow: -5px -5px 15px rgba(64, 224, 208, 0.2);
     opacity: 0.9;
     transition: box-shadow, scale 0.5s ease-out;
 }
 
 .hero_image:hover {
-    scale: 1.02;
-    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1);
-    box-shadow: 5px 5px 15px rgba(64, 224, 208, 0.2);
+    scale: 1.01;
     box-shadow: 5px 5px 15px rgba(189, 111, 58, 0.2);
     opacity: 1;
     transition: all 0.4s ease-out;
@@ -210,7 +208,6 @@ header {
 /* Projects */
 
 .tab_heading {
-    /* padding: 0.5rem 3rem 0.5rem 3rem; */
     border: none;
     font-weight: bold;
     box-shadow: -3px -3px 5px rgba(18, 247, 214, 0.2);
@@ -237,4 +234,23 @@ header {
     display: block;
     padding: 0.5rem 3rem 0.5rem 3rem;
     color: var(--white) !important;
+}
+
+.card {
+    background: var(--btn);
+}
+
+.github_logo {
+    width: 12%;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.project_img {
+    width: 10rem;
+}
+
+.card-img-top{
+    width: 300px;
+    height: 300px;
 }

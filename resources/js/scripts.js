@@ -31,5 +31,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Show the default active tab
-    document.getElementById("html-css-projects").style.display = "block";
+    document.getElementById("javascript-projects").style.display = "block";
 });

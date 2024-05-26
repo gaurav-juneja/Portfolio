@@ -248,9 +248,30 @@ header {
 
 .project_img {
     width: 10rem;
+    height: 130px;
 }
 
-.card-img-top{
+.card-img-top {
     width: 300px;
     height: 300px;
 }
+
+/* Ensure the project images are responsive */
+/* .project_img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 150px;
+    margin: auto;
+}
+
+.carousel-item {
+    text-align: center;  Center the content 
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+} 
+*/

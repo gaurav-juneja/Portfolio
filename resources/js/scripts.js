@@ -32,4 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Show the default active tab
     document.getElementById("javascript-projects").style.display = "block";
+
+    // Initialize Bootstrap carousels
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        new bootstrap.Carousel(carousel);
+    });
 });

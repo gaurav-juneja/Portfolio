@@ -8,13 +8,21 @@ $('a[href*="#"]').on('click', function (e) {
 });
 
 // Projects
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".tab_heading");
     const projectSections = document.querySelectorAll(".project-section");
 
+    // Hide all project sections except the default active one
+    projectSections.forEach(section => {
+        section.style.display = "none";
+    });
+    document.getElementById("javascript-projects").style.display = "block";
+
     tabs.forEach(tab => {
-        tab.addEventListener("click", function() {
+        tab.addEventListener("click", function () {
             const tabId = this.getAttribute("data-tab");
+
+            // Show the selected project section and hide others
             projectSections.forEach(section => {
                 if (section.id === tabId + "-projects") {
                     section.style.display = "block";
@@ -23,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
 
+            // Update active tab
             tabs.forEach(t => {
                 t.classList.remove("active-tab");
             });
@@ -30,8 +39,33 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Show the default active tab
-    document.getElementById("javascript-projects").style.display = "block";
+    // Experience/Education Tabs
+    const experienceTabs = document.querySelectorAll(".experience_tab_heading");
+    const experienceSections = {
+        "experience": document.getElementById("experience-section"),
+        "education": document.getElementById("education-section")
+    };
+
+    experienceTabs.forEach(tab => {
+        tab.addEventListener("click", function () {
+            const tabId = this.getAttribute("data-tab");
+
+            // Show the selected section and hide others
+            for (const sectionId in experienceSections) {
+                if (sectionId === tabId) {
+                    experienceSections[sectionId].style.display = "block";
+                } else {
+                    experienceSections[sectionId].style.display = "none";
+                }
+            }
+
+            // Update active tab
+            experienceTabs.forEach(t => {
+                t.classList.remove("active-tab");
+            });
+            this.classList.add("active-tab");
+        });
+    });
 
     // Initialize Bootstrap carousels
     const carousels = document.querySelectorAll('.carousel');

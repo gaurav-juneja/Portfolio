@@ -279,8 +279,8 @@ header {
 .hr_exp_orange{
     background: var(--orange);
     width: 2px;
-    opacity: 0.5;
-    height: 10rem;
+    opacity: 0.8;
+    height: 8rem;
     margin: 0;
 }
 
@@ -288,12 +288,28 @@ header {
     background: var(--teal);
     width: 2px;
     opacity: 0.5;
-    height: 10rem;
+    height: 8rem;
+    margin: 0;
+}
+
+.hr_exp_orange_ed{
+    background: var(--orange);
+    width: 2px;
+    opacity: 0.8;
+    height: 3rem;
+    margin: 0;
+}
+
+.hr_exp_blue_ed{
+    background: var(--teal);
+    width: 2px;
+    opacity: 0.5;
+    height: 3rem;
     margin: 0;
 }
 
 .brain{
-    border: 1rem solid var(--body);
+    border: 0.7rem solid var(--body);
     border-radius: 50%;
 }
 

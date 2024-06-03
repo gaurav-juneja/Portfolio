@@ -131,13 +131,18 @@ header {
     background-color: var(--light-teal);
     margin: 1rem;
     opacity: 0.8;
-    transition: box-shadow, scale 0.4s ease-out;
+    transition: box-shadow, scale 0.4s ease-out; 
+    width: 10rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 .skills_tab_link {
     font-size: 1.25rem;
     display: block;
-    padding: 0.5rem 3rem 0.5rem 3rem;
     color: var(--white) !important;
 }
 
@@ -276,7 +281,7 @@ header {
     transition: all 0.4s ease-out;
 }
 
-.hr_exp_orange{
+.hr_exp_orange {
     background: var(--orange);
     width: 2px;
     opacity: 0.8;
@@ -284,7 +289,7 @@ header {
     margin: 0;
 }
 
-.hr_exp_blue{
+.hr_exp_blue {
     background: var(--teal);
     width: 2px;
     opacity: 0.5;
@@ -292,7 +297,7 @@ header {
     margin: 0;
 }
 
-.hr_exp_orange_ed{
+.hr_exp_orange_ed {
     background: var(--orange);
     width: 2px;
     opacity: 0.8;
@@ -300,7 +305,7 @@ header {
     margin: 0;
 }
 
-.hr_exp_blue_ed{
+.hr_exp_blue_ed {
     background: var(--teal);
     width: 2px;
     opacity: 0.5;
@@ -308,11 +313,32 @@ header {
     margin: 0;
 }
 
-.brain{
+.brain {
     border: 0.7rem solid var(--body);
     border-radius: 50%;
 }
 
-#experience-section{
+#experience-section {
     min-height: 100vh;
+}
+
+/* Contact Me */
+
+.contact_img {
+    background: var(--body);
+}
+
+.form_input {
+    background: var(--body);
+    outline: none;
+    color: gray;
+    border: none;
+    box-shadow:
+        inset 3px 3px 8px rgba(0, 0, 0, 0.8),
+        inset -3px -3px 8px rgba(255, 255, 255, 0.1);
+
+}
+
+.form_input:focus::placeholder {
+    color: transparent;
 }

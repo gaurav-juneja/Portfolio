@@ -11,6 +11,18 @@ $('a[href*="#"]').on('click', function (e) {
 document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".tab_heading");
     const projectSections = document.querySelectorAll(".project-section");
+    const carousel = document.getElementById("carouselExampleIndicators");
+    const languages = ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "jQuery"];
+    const languagesParagraph = document.querySelector(".skills_tab_link");
+
+    // Set initial language
+    languagesParagraph.textContent = languages[0];
+
+    // Listen for carousel slide event
+    carousel.addEventListener("slid.bs.carousel", function (event) {
+        const index = event.to;
+        languagesParagraph.textContent = languages[index];
+    });
 
     // Hide all project sections except the default active one
     projectSections.forEach(section => {
@@ -72,4 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     carousels.forEach(carousel => {
         new bootstrap.Carousel(carousel);
     });
+
+    // Hero-Section
+    
 });

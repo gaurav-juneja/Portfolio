@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css">
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="./vendors/jquery-ui/jquery-ui.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="./vendors/aos-master/dist/aos.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="./vendors/slick-carousel/slick/slick.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="resources/css/styles.css">
-    <!-- jQuery CSS -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
-    <!-- AOS CSS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-    <!-- jQuery Script -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
-    <script>
-        $(function () {
 
-        });
-    </script>
 </head>
 
 <body>
@@ -68,7 +69,7 @@
                 <p class="fs-3">Hey</p>
                 <h1 class="fw-bold fs_52">I'm Gaurav Juneja</h1>
                 <p class="fs-3 fw-bold mb-3">Web Developer specializing in the <span style="color: var(--teal)"
-                        class="fs-2 hero_span"></span>
+                        class="fs-2" id="hero_span"></span>
                 </p>
                 <p class="fs-5 w-50 m-auto fw-light mb-3">
                     An aspiring web developer pursuing an MCA degree. Passionate
@@ -78,10 +79,10 @@
                 </p>
                 <ul class="d-flex justify-content-center fw-bold mb-4">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Learn More</a>
+                        <a class="nav-link" href="#about">Learn More</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Me</a>
+                        <a class="nav-link" href="#contact">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -89,7 +90,7 @@
     </header>
 
     <!-- About Section -->
-    <section class="container-fluid py-5 about_section">
+    <section id="about" class="container-fluid py-5 about_section">
         <div class="row" data-aos="fade-in" data-aos-duration="2000">
             <div class="col-6 text-center mt-3" data-aos="flip-left" data-aos-duration="2000">
                 <img src="resources/img/grv-about.jpg" alt="about me" class="col-7 rounded-4 hero_image">
@@ -109,13 +110,13 @@
         </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section-->
     <section class="container-fluid py-5 other_sections">
-        <div class="mx-5" data-aos="fade-right" data-aos-duration="1000">
+        <div class="mx-5" data-aos="fade-right" data-aos-duration="700">
             <h3 class="text-white">Skills</h3>
             <hr class="hr_section">
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000">
+        <div data-aos="fade-right" data-aos-duration="700">
             <div class="d-flex justify-content-center">
                 <div class="skills_tab_heading">
                     <p class="skills_tab_link"></p>
@@ -123,7 +124,6 @@
             </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide">
-            <!-- <div class="carousel-indicators"> -->
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -136,7 +136,6 @@
                 aria-label="Slide 5"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
                 aria-label="Slide 6"></button>
-            <!-- </div> -->
             <div class="carousel-inner my-3">
                 <div class="carousel-item active">
                     <img src="./resources/img/html.png" class="d-block m-auto w-25" alt="HTML">
@@ -170,23 +169,25 @@
         </div>
     </section>
 
-    <!-- Projects -->
-    <section class="container-fluid py-5 other_sections overflow-hidden">
-        <div class="mx-5" data-aos="fade-left" data-aos-duration="1000">
+    <!-- Projects Section-->
+    <section id="projects" class="container-fluid py-5 other_sections overflow-hidden">
+        <div class="mx-5" data-aos="fade-left" data-aos-duration="700">
             <h3 class="text-white text-end">Projects</h3>
             <hr class="hr_section">
         </div>
-        <ul class="d-flex justify-content-center align-items-center fw-bold mb-4">
-            <li class="tab_heading active-tab" data-tab="javascript">
-                <a class="tab_link" href="#">JavaScript</a>
-            </li>
-            <li class="tab_heading" data-tab="react">
-                <a class="tab_link" href="#">React.js</a>
-            </li>
-            <li class="tab_heading" data-tab="htmlcss">
-                <a class="tab_link" href="#">HTML/CSS</a>
-            </li>
-        </ul>
+        <div data-aos="fade-left" data-aos-duration="700">
+            <ul class="d-flex justify-content-center align-items-center fw-bold mb-4">
+                <li class="tab_heading active-tab" data-tab="javascript">
+                    <a class="tab_link" href="#">JavaScript</a>
+                </li>
+                <li class="tab_heading" data-tab="react">
+                    <a class="tab_link" href="#">React.js</a>
+                </li>
+                <li class="tab_heading" data-tab="htmlcss">
+                    <a class="tab_link" href="#">HTML/CSS</a>
+                </li>
+            </ul>
+        </div>
 
         <!-- JavaScript Projects Section -->
         <div class="project-section" id="javascript-projects">
@@ -409,25 +410,28 @@
         </div>
     </section>
 
-    <!-- Experience -->
+    <!-- Experience Section-->
     <section class="container-fluid py-5 other_sections">
-        <div class="mx-5" data-aos="fade-right" data-aos-duration="1000">
+        <div class="mx-5" data-aos="fade-right" data-aos-duration="700">
             <h3 class="text-white">Experience</h3>
             <hr class="hr_section">
         </div>
-        <ul class="d-flex justify-content-center align-items-center fw-bold mb-4">
-            <li class="experience_tab_heading active-tab" data-tab="experience">
-                <a class="tab_link" href="#">Experience</a>
-            </li>
-            <li class="experience_tab_heading" data-tab="education">
-                <a class="tab_link" href="#">Education</a>
-            </li>
-        </ul>
+        <div data-aos="fade-right" data-aos-duration="700">
+            <ul class="d-flex justify-content-center align-items-center fw-bold mb-4">
+                <li class="experience_tab_heading active-tab" data-tab="experience">
+                    <a class="tab_link" href="#">Experience</a>
+                </li>
+                <li class="experience_tab_heading" data-tab="education">
+                    <a class="tab_link" href="#">Education</a>
+                </li>
+            </ul>
+        </div>
         <div id="experience-section">
             <!-- Experience content here -->
             <div class="d-flex justify-content-evenly">
-                <div class="d-flex flex-column justify-content-md-between">
-                    <div data-aos="zoom-in" data-aos-duration="1000">
+                <!-- Left -->
+                <div class="d-flex flex-column justify-content-between">
+                    <div data-aos="zoom-in" data-aos-duration="700">
                         <div class="card rounded-4 hero_image p-2" style="width: 20rem;">
                             <div class="card-body">
                                 <h5 class="card-title text-white fs-4">Web Developer</h5>
@@ -444,7 +448,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-aos="zoom-in-right" data-aos-duration="1000">
+                    <div data-aos="zoom-in-right" data-aos-duration="700">
                         <div class="card rounded-4 hero_image p-2" style="width: 20rem;">
                             <div class="card-body">
                                 <h5 class="card-title text-white fs-4">Diploma in Computer Applications</h5>
@@ -460,6 +464,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- HR -->
                 <div class="d-flex flex-column">
                     <div class="d-flex flex-column align-items-center justify-content-center">
                         <hr class="hr_exp_orange">
@@ -477,8 +482,9 @@
                         <hr class="hr_exp_blue">
                     </div>
                 </div>
-                <div class="d-flex flex-column justify-content-md-center">
-                    <div data-aos="zoom-in-left" data-aos-duration="1000">
+                <!-- Right -->
+                <div class="d-flex flex-column justify-content-center">
+                    <div data-aos="zoom-in-left" data-aos-duration="700">
                         <div class="card rounded-4 hero_image p-2" style="width: 20rem;">
                             <div class="card-body">
                                 <h5 class="card-title text-white fs-4">Graphic Designing</h5>
@@ -498,8 +504,9 @@
         <div id="education-section" style="display: none;">
             <!-- Education content here -->
             <div class="d-flex justify-content-evenly">
-                <div class="d-flex flex-column justify-content-md-between">
-                    <div data-aos="zoom-in" data-aos-duration="1000">
+                <!-- Left -->
+                <div class="d-flex flex-column justify-content-between">
+                    <div data-aos="zoom-in" data-aos-duration="700">
                         <div class="card rounded-4 hero_image p-2" style="width: 20rem;">
                             <div class="card-body">
                                 <h5 class="card-title text-white fs-4">MCA</h5>
@@ -511,7 +518,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-aos="zoom-in-right" data-aos-duration="1000">
+                    <div data-aos="zoom-in-right" data-aos-duration="700">
                         <div class="card rounded-4 hero_image p-2" style="width: 20rem;">
                             <div class="card-body">
                                 <h5 class="card-title text-white fs-4">12th (Non-Medical)</h5>
@@ -522,6 +529,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- HR -->
                 <div class="d-flex flex-column">
                     <div class="d-flex flex-column align-items-center justify-content-center">
                         <hr class="hr_exp_orange_ed">
@@ -539,8 +547,9 @@
                         <hr class="hr_exp_blue_ed">
                     </div>
                 </div>
-                <div class="d-flex flex-column justify-content-md-center">
-                    <div data-aos="zoom-in-left" data-aos-duration="1000">
+                <!-- Right -->
+                <div class="d-flex flex-column justify-content-center">
+                    <div data-aos="zoom-in-left" data-aos-duration="700">
                         <div class="card rounded-4 hero_image p-2" style="width: 20rem;">
                             <div class="card-body">
                                 <h5 class="card-title text-white fs-4">BCA</h5>
@@ -556,17 +565,29 @@
         </div>
     </section>
 
-    <!-- Cerificates -->
-    <section class="container-fluid py-5 other_sections overflow-hidden">
-        <div class="mx-5" data-aos="fade-left" data-aos-duration="1000">
+    <!-- Cerificates Section -->
+    <section id="certificate" class="container-fluid py-5 other_sections overflow-hidden">
+        <div class="mx-5" data-aos="fade-left" data-aos-duration="700">
             <h3 class="text-white text-end">Certificates</h3>
             <hr class="hr_section">
         </div>
+        <div class="px-5">
+            <div class="center">
+                <div><img class="certificate_img" src="./resources/img/c1.jpg" alt="1"></div>
+                <div><img class="certificate_img" src="./resources/img/c2.jpg" alt="2"></div>
+                <div><img class="certificate_img" src="./resources/img/c3.jpg" alt="3"></div>
+                <div><img class="certificate_img" src="./resources/img/c4.jpg" alt="4"></div>
+                <div><img class="certificate_img" src="./resources/img/c5.jpg" alt="5"></div>
+                <div><img class="certificate_img" src="./resources/img/c6.jpg" alt="6"></div>
+                <div><img class="certificate_img" src="./resources/img/c7.jpg" alt="7"></div>
+                <div><img class="certificate_img" src="./resources/img/c8.jpg" alt="8"></div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
-    <section class="container-fluid py-5 other_sections">
-        <div class="mx-5" data-aos="fade-right" data-aos-duration="1000">
+    <!-- Contact Section-->
+    <section id="contact" class="container-fluid py-5 other_sections">
+        <div class="mx-5" data-aos="fade-right" data-aos-duration="700">
             <h3 class="text-white">Contact Me</h3>
             <hr class="hr_section">
         </div>
@@ -589,17 +610,132 @@
         </div>
     </section>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Animate on Scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
+
+    <!-- Bootstrap JS -->
+    <script src="./vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="./vendors/jquery-ui/external/jquery/jquery.js"></script>
+    <script src="./vendors/jquery-ui/jquery-ui.js"></script>
+
+    <!-- Slick Carousel (used after the jQuery) -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.center').slick({
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                adaptiveHeight: true,
+                focusOnSelect: true,
+                cssEase: 'linear',
+                arrows: false,
+                // pauseOnHover: false,
+                // pauseOnFocus: false,
+                // fade: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
     </script>
+    <script src="./vendors/slick-carousel/slick/slick.min.js"></script>
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed('#hero_span', {
+            strings: ['MERN Stack', ' '],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+        });
+    </script>
+
+    <!-- Animate on Scroll -->
+    <script src="./vendors/aos-master/dist/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize AOS
+            AOS.init();
+
+            // Tab switching logic
+            $('.experience_tab_heading').click(function (e) {
+                e.preventDefault();
+                var tab = $(this).data('tab');
+
+                // Remove active class from all tab headings
+                $('.experience_tab_heading').removeClass('active-tab');
+
+                // Add active class to the clicked tab heading
+                $(this).addClass('active-tab');
+
+                // Hide all sections
+                $('#experience-section, #education-section').hide();
+                // Show the clicked section
+                $('#' + tab + '-section').show();
+
+                // Refresh AOS animations
+                AOS.refresh();
+            });
+        });
+    </script>
+
     <!-- Custom JS -->
     <script src="resources/js/scripts.js"></script>
 
 </body>
 
 </html>
+
+
+<!-- CDN Links -->
+
+<!-- CSS -->
+
+<!-- Bootstrap CSS -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+<!-- jQuery UI CSS -->
+<!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css"> -->
+
+<!-- AOS CSS -->
+<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+<!-- Slick CSS -->
+<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+
+<!-- Scripts -->
+
+<!-- Bootstrap JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<!-- jQuery -->
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+<!-- <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script> -->
+
+<!-- Slick Carousel (used after the jQuery) -->
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+<!-- Animate on Scroll -->
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->

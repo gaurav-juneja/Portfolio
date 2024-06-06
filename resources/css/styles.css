@@ -30,6 +30,7 @@ html {
     font-weight: 400;
     font-style: normal;
     cursor: default;
+    scroll-behavior: smooth;
 }
 
 .hr_section {
@@ -105,6 +106,11 @@ header {
     font-size: 52px;
 }
 
+.typed-cursor {
+    color: var(--teal);
+    font-size: larger;
+}
+
 /* About-Section */
 
 .about_section {
@@ -131,7 +137,7 @@ header {
     background-color: var(--light-teal);
     margin: 1rem;
     opacity: 0.8;
-    transition: box-shadow, scale 0.4s ease-out; 
+    transition: box-shadow, scale 0.4s ease-out;
     width: 10rem;
     overflow: hidden;
     white-space: nowrap;
@@ -259,6 +265,30 @@ header {
 .card-img-top {
     width: 300px;
     height: 300px;
+}
+
+/* Certificates */
+
+.certificate_img {
+    width: 30vw;
+    height: 60vh;
+    padding: 1rem;
+    border-radius: 50px;
+    transform: scale(0.8);
+}
+
+.slick-slide,
+.slick-active,
+.slick-current {
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.slick-center {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    transform: scale(1.25);
+    transition: all 0.5s ease-in-out;
 }
 
 /* Expirience */

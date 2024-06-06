@@ -4,7 +4,7 @@ $('a[href*="#"]').on('click', function (e) {
 
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
-    }, 500, 'linear');
+    }, 200, 'linear');
 });
 
 // Projects
@@ -84,7 +84,5 @@ document.addEventListener("DOMContentLoaded", function () {
     carousels.forEach(carousel => {
         new bootstrap.Carousel(carousel);
     });
-
-    // Hero-Section
     
 });

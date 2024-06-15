@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./vendors/aos-master/dist/aos.css">
 
     <!-- Slick CSS -->
+    <link rel="stylesheet" href="./vendors/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="./vendors/slick-carousel/slick/slick.css">
 
     <!-- Custom CSS -->
@@ -35,9 +36,9 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fw-bold py-4">
             <div class="container-fluid">
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button> -->
+                </button>
                 <div class="collapse navbar-collapse justify-content-around" id="navbarResponsive">
                     <ul class="d-flex">
                         <li class="nav-item">
@@ -77,14 +78,16 @@
                     Eager to apply my skills, I'm actively seeking opportunities to contribute to innovative projects
                     and grow in the digital space.
                 </p>
-                <ul class="d-flex justify-content-center fw-bold mb-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Learn More</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Me</a>
-                    </li>
-                </ul>
+                <div data-aos="zoom-in" data-aos-duration="700">
+                    <ul class="d-flex justify-content-center fw-bold mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Learn More</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </header>
@@ -175,152 +178,76 @@
             <h3 class="text-white text-end">Projects</h3>
             <hr class="hr_section">
         </div>
+        <!-- Tabs -->
         <div data-aos="fade-left" data-aos-duration="700">
             <ul class="d-flex justify-content-center align-items-center fw-bold mb-4">
-                <li class="tab_heading active-tab" data-tab="javascript">
-                    <a class="tab_link" href="#">JavaScript</a>
-                </li>
-                <li class="tab_heading" data-tab="react">
+                <li class="tab_heading active-tab" data-tab="react">
                     <a class="tab_link" href="#">React.js</a>
                 </li>
                 <li class="tab_heading" data-tab="htmlcss">
                     <a class="tab_link" href="#">HTML/CSS</a>
                 </li>
+                <li class="tab_heading" data-tab="javascript">
+                    <a class="tab_link" href="#">JavaScript</a>
+                </li>
             </ul>
         </div>
-
-        <!-- JavaScript Projects Section -->
-        <div class="project-section" id="javascript-projects">
-            <div id="javascriptCarousel" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-4 d-flex justify-content-end align-items-center">
-                                <div class="d-flex flex-column justify-content-center align-items-center fw-bold mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex justify-content-center align-items-center mb-3 py-3">
-                                <div class="card rounded-4 hero_image" style="width: 23rem;">
-                                    <div class="m-auto">
-                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/grv-about.jpg"
-                                            alt="project">
-                                    </div>
-                                    <div class="card-body text-white text-center">
-                                        <h5 class="card-title fw-bold">JavaScript Project 1</h5>
-                                        <p class="card-text fw-lighter px-4">Description of JavaScript Project 1.</p>
-                                        <a href="#" class="">
-                                            <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-4 d-flex justify-content-end align-items-center">
-                                <div class="d-flex flex-column justify-content-center align-items-center fw-bold mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex justify-content-center align-items-center mb-3 py-3">
-                                <div class="card rounded-4 hero_image" style="width: 23rem;">
-                                    <div class="m-auto">
-                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/grv-about.jpg"
-                                            alt="project">
-                                    </div>
-                                    <div class="card-body text-white text-center">
-                                        <h5 class="card-title fw-bold">JavaScript Project 2</h5>
-                                        <p class="card-text fw-lighter px-4">Description of JavaScript Project 2.</p>
-                                        <a href="#" class="">
-                                            <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#javascriptCarousel"
-                    data-bs-slide="prev">
-                    <span class="symbol symbol_prev">&lt;</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#javascriptCarousel"
-                    data-bs-slide="next">
-                    <span class="symbol symbol_next">&gt;</span>
-                </button>
-            </div>
-        </div>
+        <!-- Tabs -->
 
         <!-- React Projects Section -->
-        <div class="project-section" id="react-projects" style="display: none;">
+        <div class="project-section" id="react-projects">
             <div id="reactCarousel" class="carousel slide">
                 <div class="carousel-inner">
+                    <!-- Item-1 -->
                     <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-4 d-flex justify-content-end align-items-center">
-                                <div class="d-flex flex-column justify-content-center align-items-center fw-bold mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="project-carousel">
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4"
+                                            src="./resources/img/react-1/react1.jpeg" alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4"
+                                            src="./resources/img/react-1/react2.jpeg" alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4"
+                                            src="./resources/img/react-1/react3.jpeg" alt="project">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-8 d-flex justify-content-center align-items-center mb-3 py-3">
-                                <div class="card rounded-4 hero_image" style="width: 23rem;">
-                                    <div class="m-auto">
-                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/grv-about.jpg"
-                                            alt="project">
-                                    </div>
-                                    <div class="card-body text-white text-center">
-                                        <h5 class="card-title fw-bold">React Project 1</h5>
-                                        <p class="card-text fw-lighter px-4">Description of React Project 1.</p>
-                                        <a href="#" class="">
-                                            <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
-                                        </a>
-                                    </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">PG Seeker</h5>
+                                    <p class="card-text fw-lighter px-4">Your Ultimate PG Accommodation Finder. Discover
+                                        the perfect PG accommodation on PGSeeker. Browse listings, apply filters, and
+                                        find your ideal space.
+                                        <i>(Optimized for 15.6" laptop screens.)</i>
+                                        <p><a href="https://pgseeker.netlify.app/" target="_blank" class="project_link"><i>Click here to visit the website ></i></a></p>
+                                    </p>
+                                    <a href="https://github.com/gaurav-juneja/PGseeker" class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Item-2 -->
                     <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-4 d-flex justify-content-end align-items-center">
-                                <div class="d-flex flex-column justify-content-center align-items-center fw-bold mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="m-2">
+                                    <img class="card-img-top mt-4 rounded-4" src="./resources/img/react-2/react21.png"
+                                        alt="project">
                                 </div>
-                            </div>
-                            <div class="col-8 d-flex justify-content-center align-items-center mb-3 py-3">
-                                <div class="card rounded-4 hero_image" style="width: 23rem;">
-                                    <div class="m-auto">
-                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/grv-about.jpg"
-                                            alt="project">
-                                    </div>
-                                    <div class="card-body text-white text-center">
-                                        <h5 class="card-title fw-bold">React Project 2</h5>
-                                        <p class="card-text fw-lighter px-4">Description of React Project 2.</p>
-                                        <a href="#" class="">
-                                            <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
-                                        </a>
-                                    </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">Keeper</h5>
+                                    <p class="card-text fw-lighter px-4">Stay organized with our easy-to-use To-Do List
+                                        React App. It is a simple and effective tool for managing your tasks. Easily add
+                                        new notes and delete them when they're done.</p>
+                                    <a href="https://github.com/gaurav-juneja/MERN-Stack-Learning/tree/main/Projects/keeper"
+                                        class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -341,69 +268,242 @@
         <div class="project-section" id="htmlcss-projects" style="display: none;">
             <div id="htmlCarousel" class="carousel slide">
                 <div class="carousel-inner">
+                    <!-- Item-1 -->
                     <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-4 d-flex justify-content-end align-items-center">
-                                <div class="d-flex flex-column justify-content-center align-items-center fw-bold mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex justify-content-center align-items-center mb-3 py-3">
-                                <div class="card rounded-4 hero_image" style="width: 23rem;">
-                                    <div class="m-auto">
-                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/grv-about.jpg"
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="project-carousel">
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html5/html51.png"
                                             alt="project">
                                     </div>
-                                    <div class="card-body text-white text-center">
-                                        <h5 class="card-title fw-bold">HTML Project 1</h5>
-                                        <p class="card-text fw-lighter px-4">Description of HTML Project 1.</p>
-                                        <a href="#" class="">
-                                            <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
-                                        </a>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html5/html52.png"
+                                            alt="project">
                                     </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html5/html53.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html5/html54.png"
+                                            alt="project">
+                                    </div>
+                                </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">Omni Food</h5>
+                                    <p class="card-text fw-lighter px-4">Omnifood is a premium food delivery service project providing healthy, organic meals quickly. Available in several major cities, it offers flexible subscription plans for convenient daily nutrition.</p>
+                                    <p><a href="https://hygenicfood.netlify.app/"target="_blank" class="project_link"><i>Click here to visit the website ></i></a></p>
+                                    <a href="https://github.com/gaurav-juneja/Food-Website" class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Item-2 -->
                     <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-4 d-flex justify-content-end align-items-center">
-                                <div class="d-flex flex-column justify-content-center align-items-center fw-bold mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                    <img src="resources/img/grv.jpg" alt="image"
-                                        class="hero_image rounded-circle project_img mb-3">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex justify-content-center align-items-center mb-3 py-3">
-                                <div class="card rounded-4 hero_image" style="width: 23rem;">
-                                    <div class="m-auto">
-                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/grv-about.jpg"
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="project-carousel">
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html1/html11.png"
                                             alt="project">
                                     </div>
-                                    <div class="card-body text-white text-center">
-                                        <h5 class="card-title fw-bold">HTML Project 2</h5>
-                                        <p class="card-text fw-lighter px-4">Description of HTML Project 2.</p>
-                                        <a href="#" class="">
-                                            <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
-                                        </a>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html1/html12.png"
+                                            alt="project">
                                     </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html1/html13.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html1/html14.png"
+                                            alt="project">
+                                    </div>
+                                </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">Digiency</h5>
+                                    <p class="card-text fw-lighter px-4">This is a digital agency's website to boost engagement and conversions, featuring a modern homepage, detailed services, portfolio showcase, testimonials, and a blog.</p>
+                                    <a href="https://github.com/gaurav-juneja/Frontend-Figma/tree/main/Digiency" class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item-3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="project-carousel">
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html2/html21.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html2/html22.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html2/html23.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html2/html24.png"
+                                            alt="project">
+                                    </div>
+                                </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">Custom Jewels</h5>
+                                    <p class="card-text fw-lighter px-4">The project involves a sleek e-commerce website for a jewelry store, highlighting product collections, top picks, and exclusive services like gift wrapping and holiday returns.</p>
+                                    <a href="https://github.com/gaurav-juneja/Frontend-Figma/tree/main/Jewels" class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item-4 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="project-carousel">
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html3/html31.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html3/html32.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html3/html33.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html3/html34.png"
+                                            alt="project">
+                                    </div>
+                                </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">Medical Active</h5>
+                                    <p class="card-text fw-lighter px-4">Develop a medical website showcasing top doctors, specialized departments, online appointments, and educational resources, with an emphasis on detailed services and patient testimonials.</p>
+                                    <a href="https://github.com/gaurav-juneja/Frontend-Figma/tree/main/Medical%20Active" class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item-5 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="project-carousel">
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html4/html41.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html4/html42.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html4/html43.png"
+                                            alt="project">
+                                    </div>
+                                    <div class="px-2">
+                                        <img class="card-img-top mt-4 rounded-4" src="./resources/img/html4/html44.png"
+                                            alt="project">
+                                    </div>
+                                </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">W3 Schools</h5>
+                                    <p class="card-text fw-lighter px-4">Develop an clone of W3Schools, offering comprehensive tutorials, references, and interactive examples for web development. The site will feature precise navigation, practical coding exercises, and a user-friendly interface for seamless learning.</p>
+                                    <a href="https://github.com/gaurav-juneja/Frontend-Figma/tree/main/Projects/Project-3%20W3-Schools" class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#hmtlCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#htmlCarousel" data-bs-slide="prev">
                     <span class="symbol symbol_prev">&lt;</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#hmtlCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#htmlCarousel" data-bs-slide="next">
+                    <span class="symbol symbol_next">&gt;</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- JavaScript Projects Section -->
+        <div class="project-section" id="javascript-projects" style="display: none;">
+            <div id="javascriptCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <!-- Item-1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="px-2">
+                                    <img class="card-img-top mt-4 rounded-4" src="./resources/img/js/js33.png"
+                                        alt="project">
+                                </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">Currency Converter</h5>
+                                    <p class="card-text fw-lighter px-4">A currency converter efficiently converts between different currencies, providing users with real-time exchange rates for accurate international transactions and financial planning.</p>
+                                    <a href="#" class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item-2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="px-2">
+                                    <img class="card-img-top mt-4 rounded-4" src="./resources/img/js/js22.png"
+                                        alt="project">
+                                </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">CSS Variables</h5>
+                                    <p class="card-text fw-lighter px-4">This project uses JavaScript and CSS variables to apply blur effects and adjust image spacing dynamically, offering users control over image aesthetics and layout with ease.</p>
+                                    <a href="https://github.com/gaurav-juneja/JavaScript-30-Days-Challenge/tree/main/03-CSS-Variables" class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item-3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center mb-3 py-3">
+                            <div class="card rounded-4 hero_image" style="width: 30rem;">
+                                <div class="px-2">
+                                    <img class="card-img-top mt-4 rounded-4" src="./resources/img/js/js11.png"
+                                        alt="project">
+                                </div>
+                                <div class="card-body text-white text-center">
+                                    <h5 class="card-title fw-bold">Drum Kit</h5>
+                                    <p class="card-text fw-lighter px-4">A digital drum kit project using HTML, CSS, and JavaScript, where users can play drums by using keyboard keys. It provides a fun and interactive way to experience playing percussion instruments virtually.</p>
+                                    <a href="https://github.com/gaurav-juneja/JavaScript-30-Days-Challenge/tree/main/01-Drum-Kit" class="" target="_blank">
+                                        <img class="github_logo pt-3" src="./resources/img/github.png" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#javascriptCarousel"
+                    data-bs-slide="prev">
+                    <span class="symbol symbol_prev">&lt;</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#javascriptCarousel"
+                    data-bs-slide="next">
                     <span class="symbol symbol_next">&gt;</span>
                 </button>
             </div>
@@ -411,7 +511,7 @@
     </section>
 
     <!-- Experience Section-->
-    <section class="container-fluid py-5 other_sections">
+    <section class="container-fluid py-5 other_sections overflow-hidden">
         <div class="mx-5" data-aos="fade-right" data-aos-duration="700">
             <h3 class="text-white">Experience</h3>
             <hr class="hr_section">
@@ -572,21 +672,21 @@
             <hr class="hr_section">
         </div>
         <div class="px-5">
-            <div class="center">
-                <div><img class="certificate_img" src="./resources/img/c1.jpg" alt="1"></div>
-                <div><img class="certificate_img" src="./resources/img/c2.jpg" alt="2"></div>
-                <div><img class="certificate_img" src="./resources/img/c3.jpg" alt="3"></div>
-                <div><img class="certificate_img" src="./resources/img/c4.jpg" alt="4"></div>
-                <div><img class="certificate_img" src="./resources/img/c5.jpg" alt="5"></div>
-                <div><img class="certificate_img" src="./resources/img/c6.jpg" alt="6"></div>
-                <div><img class="certificate_img" src="./resources/img/c7.jpg" alt="7"></div>
-                <div><img class="certificate_img" src="./resources/img/c8.jpg" alt="8"></div>
+            <div class="certificate-carousel">
+                <div><img class="certificate_img" src="./resources/img/certificates/c1.jpg" alt="1"></div>
+                <div><img class="certificate_img" src="./resources/img/certificates/c2.jpg" alt="2"></div>
+                <div><img class="certificate_img" src="./resources/img/certificates/c3.jpg" alt="3"></div>
+                <div><img class="certificate_img" src="./resources/img/certificates/c4.jpg" alt="4"></div>
+                <div><img class="certificate_img" src="./resources/img/certificates/c5.jpg" alt="5"></div>
+                <div><img class="certificate_img" src="./resources/img/certificates/c6.jpg" alt="6"></div>
+                <div><img class="certificate_img" src="./resources/img/certificates/c7.jpg" alt="7"></div>
+                <div><img class="certificate_img" src="./resources/img/certificates/c8.jpg" alt="8"></div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section-->
-    <section id="contact" class="container-fluid py-5 other_sections">
+    <section id="contact" class="container-fluid py-5 other_sections overflow-hidden">
         <div class="mx-5" data-aos="fade-right" data-aos-duration="700">
             <h3 class="text-white">Contact Me</h3>
             <hr class="hr_section">
@@ -602,14 +702,13 @@
                         <input class="p-3 m-3 rounded-2 fw-bold form_input" type="email" placeholder="Email*" required>
                         <textarea class="p-3 m-3 rounded-2 fw-bold form_input" name="message" id="message"
                             placeholder="Message*" required></textarea>
-                        <button class="nav-item nav-link col-4 m-auto fw-bold mt-3" type="submit">Send</button>
+                        <button class="text-white fs-5 nav-item py-2 col-4 m-auto fw-bold mt-3" type="submit">Send</button>
                     </div>
                 </form>
             </div>
         </div>
         </div>
     </section>
-
 
     <!-- Bootstrap JS -->
     <script src="./vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -621,7 +720,17 @@
     <!-- Slick Carousel (used after the jQuery) -->
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.center').slick({
+            $('.project-carousel').slick({
+                infinite: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+            })
+
+            $('.certificate-carousel').slick({
                 centerMode: true,
                 centerPadding: '0px',
                 slidesToShow: 3,
@@ -633,9 +742,9 @@
                 focusOnSelect: true,
                 cssEase: 'linear',
                 arrows: false,
-                // pauseOnHover: false,
-                // pauseOnFocus: false,
-                // fade: true,
+                dots: true,
+                pauseOnHover: false,
+                pauseOnFocus: false,
                 responsive: [
                     {
                         breakpoint: 768,

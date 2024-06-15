@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     projectSections.forEach(section => {
         section.style.display = "none";
     });
-    document.getElementById("javascript-projects").style.display = "block";
+    document.getElementById("react-projects").style.display = "block";
 
     tabs.forEach(tab => {
         tab.addEventListener("click", function () {
@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.add("active-tab");
         });
     });
+    
 
     // Experience/Education Tabs
     const experienceTabs = document.querySelectorAll(".experience_tab_heading");

@@ -63,6 +63,7 @@ header {
 .nav-link {
     font-size: large;
     padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 8px 32px 8px 32px;
     color: var(--white) !important;
 }
 
@@ -247,6 +248,14 @@ header {
     color: var(--white) !important;
 }
 
+.project_link{
+    color: var(--teal);
+}
+
+.project_link:hover{
+    color: var(--light-teal);
+}
+
 .card {
     background: var(--btn);
 }
@@ -262,9 +271,12 @@ header {
     height: 130px;
 }
 
-.card-img-top {
-    width: 300px;
-    height: 300px;
+.slick-dots li button:before{
+    color: var(--light-teal);
+}
+
+.slick-dots li.slick-active button::before {
+    color: var(--teal);
 }
 
 /* Certificates */
@@ -281,7 +293,6 @@ header {
 .slick-active,
 .slick-current {
     transition: all 0.5s ease-in-out;
-    
 }
 
 .slick-center {

@@ -19,6 +19,7 @@
 p,
 ul {
     margin: 0;
+    padding-left: 0;
 }
 
 body,
@@ -119,6 +120,10 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+.about_text{
+    text-align: justify;
 }
 
 /* Skills */
@@ -266,11 +271,6 @@ header {
     filter: invert(1);
 }
 
-.project_img {
-    width: 10rem;
-    height: 130px;
-}
-
 .slick-dots li button:before{
     color: var(--light-teal);
 }
@@ -359,9 +359,13 @@ header {
     border-radius: 50%;
 }
 
+.experience_card{
+    width: 23rem;
+}
+
 #experience-section {
     min-height: 100vh;
-}
+}   
 
 /* Contact Me */
 
@@ -370,6 +374,7 @@ header {
 }
 
 .form_input {
+    width: 100%;
     background: var(--body);
     outline: none;
     color: gray;
@@ -382,4 +387,8 @@ header {
 
 .form_input:focus::placeholder {
     color: transparent;
+}
+
+textarea{
+    height: 150px;    
 }
